@@ -1,0 +1,52 @@
+.tools/
+artifacts/
+**/bin/
+**/obj/
+private-diagnostics/
+*.user
+**/node_modules/
+
+.claude/
+.copilot/
+.codex/
+.agents/
+.vs/
+.vscode/
+.idea/
+*.suo
+*.local.json
+*.local.yml
+*.local.yaml
+
+.env
+.env.*
+!.env.example
+!.env.sample
+.npmrc
+.netrc
+*.pem
+*.key
+*.pfx
+*.p12
+*.publishsettings
+*.pubxml
+
+*.log
+*.dmp
+*.dump
+*.pdb
+*.binlog
+*.tmp
+.copilot-usage-regression-*/
+CopilotUsage.Smoke.*/
+GitHubWebView2/
+settings.json
+snapshot.json
+features-snapshot.json
+Cookies
+Cookies-journal
+Login Data
+Login Data-journal
+Web Data
+Web Data-journal
+Local State

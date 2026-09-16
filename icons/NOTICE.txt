@@ -1,0 +1,18 @@
+IconPark battery SVG assets
+Copyright 2019-present Bytedance Inc.
+SPDX-License-Identifier: Apache-2.0
+
+Source: https://github.com/bytedance/IconPark
+Revision: 8dc132da4c85671ba6a5962c87aa2bdafbf158e9
+
+Filename suffix                 Upstream source
+_battery-empty.svg              source/Energy/battery-empty.svg
+_battery-full.svg               source/Energy/battery-full.svg
+_battery-working-one.svg        source/Hardware/battery-working-one.svg
+
+Customized for this project by Abo-Fat: 24px intrinsic size, transparent
+battery body, and #333 foreground. Original view box and geometry retained.
+These SVG assets retain Apache-2.0 and are not covered by the root MIT license.
+
+See ..\licenses\IconPark-LICENSE.txt for the license copy and
+..\THIRD-PARTY-NOTICES.md for provenance and redistribution information.

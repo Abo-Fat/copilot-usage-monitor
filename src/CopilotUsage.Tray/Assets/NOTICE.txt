@@ -1,0 +1,17 @@
+Generated IconPark battery PNG assets (battery-*.png)
+Copyright 2019-present Bytedance Inc.
+SPDX-License-Identifier: Apache-2.0
+
+Source: https://github.com/bytedance/IconPark
+Revision: 8dc132da4c85671ba6a5962c87aa2bdafbf158e9
+Upstream icons: source/Energy/battery-empty.svg and battery-full.svg
+
+Modified by Abo-Fat: adapted the outline SVGs to zero through four charge
+bars, changed foreground to white for runtime tinting, and rasterized to
+16, 20, 24, 32, 40, 48, and 64 pixels. Each PNG includes attribution and
+modification metadata preserved by tools\icon-assets\generate.cjs.
+These derived assets retain Apache-2.0, not the root project's MIT license.
+
+Distribute these assets with the license in licenses\IconPark-LICENSE.txt
+and the provenance/modification information in THIRD-PARTY-NOTICES.md.
+Those paths are relative to the repository root.
