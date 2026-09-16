@@ -2,20 +2,23 @@
 
 ## Current availability
 
-This project is currently a private source preview. There is no published
-release, security response SLA, or enabled public vulnerability-reporting
-endpoint advertised by this document.
+This project is a public source preview. There are no packaged releases or
+guaranteed security response times. Reports should identify the affected commit.
 
-If you already have access, contact the maintainer using an existing private
-channel and agree on a safe reporting route before sharing sensitive details.
-Do not put credentials or private account data in an Issue, pull request,
-commit, or attachment, even while the repository is private: that material may
-later become visible when the repository or discussion is shared.
+## Report a vulnerability privately
 
-Before any public launch, the maintainer must establish and verify a private
-reporting channel, such as GitHub private vulnerability reporting where
-available, and update this document with the confirmed route. Do not assume
-that adding this file enables that feature.
+Use [GitHub private vulnerability reporting](https://github.com/Abo-Fat/copilot-usage-monitor/security/advisories/new)
+for this repository. Sign in to GitHub and submit a private report to the
+maintainer through that form rather than opening a public Issue or pull request.
+
+If the reporting form is unavailable, do not post the vulnerability details
+publicly. Use an existing private channel to agree on an alternative route.
+Never include credentials or private account data in a report, commit, or
+attachment; private reporting is not a reason to share real secrets.
+
+Non-sensitive bug reports may use the
+[issue tracker](https://github.com/Abo-Fat/copilot-usage-monitor/issues) after
+removing personal data.
 
 ## What to include
 

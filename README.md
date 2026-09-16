@@ -7,8 +7,9 @@ Windows 原生系统托盘工具，使用 C# / .NET 10 / WinForms / WebView2。
 本项目是独立社区工具，与 GitHub、Microsoft 或 ByteDance 无隶属、背书关系。
 GitHub 和 Copilot 等名称仅用于说明兼容的服务。
 
-当前为**私有源码预览阶段**，尚未发布 Releases 安装包，也未配置自动构建。
-获得仓库访问权限后，需要先按“构建与离线回归”一节在 Windows 上构建。
+当前为**公开源码预览版本**，可从
+[GitHub 仓库](https://github.com/Abo-Fat/copilot-usage-monitor) 获取源码。
+尚未发布 Releases 安装包，也未配置自动构建；请按“构建与离线回归”一节在 Windows 上构建。
 文档和离线测试使用人工构造的账号及用量数据，不代表任何真实账户的额度或用量。
 
 ## 启动与登录
@@ -110,7 +111,9 @@ Windows 可能将图标放在任务栏隐藏图标区域，可手动拖到常显
 
 反馈问题时只提供脱敏后的复现步骤、版本和必要错误信息。不要附上浏览器配置目录、
 Cookie、PAT、认证头、真实用量缓存、完整网页或未经脱敏的截图。
-敏感问题的处理方式见 [SECURITY.md](SECURITY.md)。
+普通问题可提交脱敏后的 [Issue](https://github.com/Abo-Fat/copilot-usage-monitor/issues)；
+安全漏洞请使用 [私密漏洞报告](https://github.com/Abo-Fat/copilot-usage-monitor/security/advisories/new)，
+不要在公开 Issue 中披露。报告要求见 [SECURITY.md](SECURITY.md)。
 本地 SDK、构建产物、AI 工具本机配置及运行数据不属于源码分发内容；
 `.gitignore` 只是防误提交措施，不能替代上传前检查，也不会清除已提交的历史。
 
@@ -121,9 +124,15 @@ Cookie、PAT、认证头、真实用量缓存、完整网页或未经脱敏的�
 `global.json` 允许使用较新的 .NET 10 feature band。
 构建脚本优先使用可选的 `.tools\dotnet`，否则使用系统 `dotnet`。
 
+首次获取源码并构建：
+
 ```powershell
+git clone https://github.com/Abo-Fat/copilot-usage-monitor.git
+Set-Location .\copilot-usage-monitor
 powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\tools\Build.ps1
 ```
+
+已有源码时，只需在仓库根目录运行最后一条构建命令。
 
 脚本构建解决方案、运行数据逻辑与托盘图标回归，并生成 `artifacts\win-x64`。
 这里的 `dotnet publish` 只生成本地文件，不会上传 GitHub。
